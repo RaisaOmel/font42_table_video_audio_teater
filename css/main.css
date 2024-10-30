@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    background-color: #ccc;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: calc(20px * 1.3);
+    min-height: 100vh;
+}
+
+.wrapper{
+    max-width: 900px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 80px auto;
+}
+
+.wrapper table{
+    width: 100%;
+    border: 2px solid #010e50;
+    /* border-collapse: collapse; */
+    border-spacing: 25px;
+}
+/* способы скрытия элементов на странице */
+.wrapper table th{
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    /* display: none; */
+}
+
+.wrapper table td,
+.wrapper table th{
+    border: 1px solid #062b15;
+    padding: 25px;
+    transition: 0.6s;
+}
+
+.wrapper table td:hover,
+.wrapper table th:hover{
+    background-color: #222;
+    color: #eee;
+}
+
+.wrapper table tr:nth-child(2n){
+    background-color: #b39696;
+}
+
+.wrapper table tr:hover{
+    background-color: #ccc;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section video{
+    width: 100%;
+}
